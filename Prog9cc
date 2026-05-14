@@ -1,0 +1,34 @@
+OE PROGRAM 9
+
+AWS Relational Database Server Configuration
+
+Aim
+To configure relational database service.
+
+Step 1 Open RDS
+
+1. Search RDS.
+2. Open RDS dashboard.
+
+Step 2 Create Database
+
+1. Click Create Database.
+2. Select MySQL.
+3. Choose Free Tier.
+
+Step 3 Configure Database
+
+1. Enter DB name.
+2. Enter username.
+3. Enter password.
+4. Select private subnet.
+
+Step 4 Launch Database
+
+1. Scroll down.
+2. Click Create Database.
+3. Wait for database creation.
+
+Result
+AWS RDS configured successfully.
+

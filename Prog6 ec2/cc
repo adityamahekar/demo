@@ -1,0 +1,41 @@
+PROGRAM 6
+
+Launch EC2 Instances in Public and Private Subnets
+
+Aim
+To launch web server in public subnet and database server in private subnet.
+
+Step 1 Open EC2
+
+1. Search EC2.
+2. Open EC2 dashboard.
+
+Step 2 Launch Public EC2
+
+1. Click Launch Instance.
+2. Enter instance name.
+3. Select Amazon Linux.
+4. Select t2.micro.
+5. Select public subnet.
+6. Enable Auto Assign Public IP.
+7. Create security group.
+8. Allow HTTP and SSH.
+9. Click Launch Instance.
+
+Step 3 Install Apache Web Server
+Connect using SSH.
+Run commands
+sudo yum update -y
+sudo yum install httpd -y
+sudo systemctl start httpd
+sudo systemctl enable httpd
+
+Step 4 Launch Private EC2
+
+1. Launch another instance.
+2. Select private subnet.
+3. Disable public IP.
+4. Configure database.
+
+Result
+Public and private EC2 instances launched successfully.

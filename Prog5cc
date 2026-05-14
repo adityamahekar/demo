@@ -1,0 +1,54 @@
+PROGRAM 5
+
+Create VPC and Internet Gateway
+
+Aim
+To create VPC subnet route table and internet gateway.
+
+Step 1 Open VPC
+
+1. Search VPC.
+2. Open VPC Dashboard.
+
+Step 2 Create VPC
+
+1. Click Your VPCs.
+2. Click Create VPC.
+3. Enter Name MyVPC.
+4. Enter IPv4 CIDR 10.0.0.0/16.
+5. Click Create VPC.
+
+Step 3 Create Subnet
+
+1. Open Subnets.
+2. Click Create subnet.
+3. Select VPC.
+4. Enter 10.0.1.0/24.
+5. Create subnet.
+
+Step 4 Create Internet Gateway
+
+1. Open Internet Gateways.
+2. Click Create Internet Gateway.
+3. Enter gateway name.
+4. Create gateway.
+5. Click Attach to VPC.
+6. Select MyVPC.
+
+Step 5 Create Route Table
+
+1. Open Route Tables.
+2. Create route table.
+3. Select VPC.
+4. Open Routes.
+5. Click Edit Routes.
+6. Add route 0.0.0.0/0 to Internet Gateway.
+7. Save routes.
+
+Step 6 Associate Subnet
+
+1. Open Subnet Associations.
+2. Associate subnet.
+
+Result
+VPC configured successfully.

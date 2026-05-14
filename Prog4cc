@@ -1,0 +1,186 @@
+PROGRAM 4
+
+Amazon S3 Bucket Operations
+
+Aim
+To create bucket upload object make object public and delete object.
+
+Step 1 Open AWS Console
+
+1. Open browser.
+2. Login to AWS Skill Builder.
+3. Open the S3 Lab.
+4. On top right corner click Start Lab.
+5. Wait until lab becomes green.
+6. Click Open Console.
+7. AWS Console opens in new tab.
+
+Do not change AWS Region.
+
+Step 2 Open S3 Service
+Location
+Top search bar of AWS Console.
+
+1. Move to top side of AWS Console.
+2. Click inside Search bar.
+3. Type S3.
+4. Under Services click S3.
+5. Amazon S3 Dashboard opens.
+
+Step 3 Create Bucket
+Location
+Center right side of S3 dashboard.
+
+1. Locate orange Create bucket button.
+2. Click Create bucket.
+
+Step 4 Enter Bucket Details
+Location
+Top middle section called General Configuration.
+
+1. Click inside Bucket name field.
+2. Enter reportbucket123456.
+3. Use random numbers at end for unique bucket name.
+
+Example
+reportbucket987987
+
+Step 5 Configure Object Ownership
+Scroll slightly down.
+
+1. Find section Object Ownership.
+2. Select ACLs enabled.
+3. Select Object writer.
+
+Step 6 Keep Default Settings
+
+1. Do not change Region.
+2. Do not change Encryption.
+3. Keep all remaining settings default.
+
+Step 7 Create Bucket
+Location
+Bottom right corner of page.
+
+1. Scroll fully down.
+2. Locate orange Create bucket button.
+3. Click Create bucket.
+4. Wait for success message.
+
+Bucket is created successfully.
+
+Step 8 Open Bucket
+Location
+Bucket list page.
+
+1. Locate bucket name starting with reportbucket.
+2. Click bucket name.
+3. Bucket overview page opens.
+
+Step 9 Upload File
+Location
+Top right side inside bucket.
+
+1. Click Upload.
+2. Upload wizard opens.
+
+Step 10 Add File
+Location
+Middle section of upload page.
+
+1. Click Add files.
+2. File Explorer opens.
+3. Select new report.png file.
+4. Click Open.
+
+Step 11 Upload Object
+
+1. Scroll down to bottom.
+2. Click Upload button.
+3. Wait until upload reaches 100 percent.
+4. Success message appears.
+
+Step 12 Close Upload Status
+Location
+Top right of upload status page.
+
+1. Click Close.
+2. Uploaded file appears in Objects section.
+
+Step 13 Open Uploaded Object
+Location
+Objects tab.
+
+1. Locate new report.png.
+2. Click file name.
+3. Object Overview page opens.
+
+Step 14 Copy Object URL
+Scroll slightly down.
+
+1. Find Object URL section.
+2. Copy complete URL.
+
+Step 15 Test Object URL
+
+1. Open new browser tab.
+2. Paste Object URL.
+3. Press Enter.
+4. Access Denied message appears.
+
+Reason
+Objects are private by default.
+
+Step 16 Make Object Public
+
+1. Return to AWS S3 tab.
+2. Stay on Object Overview page.
+
+Location
+Top right side.
+
+3. Click Object actions.
+4. Dropdown menu opens.
+5. Scroll inside dropdown if necessary.
+6. Click Make public using ACL.
+7. Confirm popup if it appears.
+
+Object becomes public.
+
+Step 17 Verify Public Access
+
+1. Return to browser tab containing URL.
+2. Refresh page.
+3. File opens successfully.
+
+Step 18 Delete Object
+
+1. Return to bucket page.
+2. Select checkbox beside uploaded file.
+
+Location
+Top right side.
+
+3. Click Delete.
+4. Type permanently delete.
+5. Click Delete objects.
+
+Object gets deleted.
+
+Step 19 Delete Bucket
+
+1. Click Buckets from left panel.
+2. Select checkbox beside bucket name.
+
+Location
+Top right side.
+
+3. Click Delete.
+4. Enter bucket name for confirmation.
+5. Click Delete bucket.
+
+Bucket deleted successfully.
+
+Result
+Amazon S3 bucket operations completed successfully.
+

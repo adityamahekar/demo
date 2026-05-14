@@ -1,0 +1,70 @@
+OE PROGRAM 8
+
+AWS Auto Scaling
+
+Aim
+To automatically scale EC2 instances.
+
+Step 1 Open EC2
+
+1. Open EC2 dashboard.
+2. Open Auto Scaling Groups.
+
+Step 2 Create Launch Template
+
+1. Click Create Launch Template.
+2. Select AMI.
+3. Select instance type.
+4. Save template.
+
+Step 3 Create Auto Scaling Group
+
+1. Click Create Auto Scaling Group.
+2. Select launch template.
+3. Select VPC.
+4. Select subnets.
+
+Step 4 Configure Scaling
+
+1. Enter minimum maximum and desired instances.
+2. Attach load balancer.
+3. Configure scaling policy.
+
+Result
+AWS Auto Scaling configured successfully.
+
+OE PROGRAM 8
+
+AWS Auto Scaling
+
+Aim
+To automatically scale EC2 instances.
+
+Step 1 Open EC2
+
+1. Open EC2 dashboard.
+2. Open Auto Scaling Groups.
+
+Step 2 Create Launch Template
+
+1. Click Create Launch Template.
+2. Select AMI.
+3. Select instance type.
+4. Save template.
+
+Step 3 Create Auto Scaling Group
+
+1. Click Create Auto Scaling Group.
+2. Select launch template.
+3. Select VPC.
+4. Select subnets.
+
+Step 4 Configure Scaling
+
+1. Enter minimum maximum and desired instances.
+2. Attach load balancer.
+3. Configure scaling policy.
+
+Result
+AWS Auto Scaling configured successfully.
+

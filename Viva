@@ -1,0 +1,490 @@
+# 1. Install a C Compiler in VirtualBox and Execute Simple Programs
+
+1. What is a virtual machine?
+   => A virtual machine is a software-based computer system that runs inside another computer.
+
+2. What is VirtualBox?
+   => Oracle VM VirtualBox is software used to create and manage virtual machines.
+
+3. What is a C compiler?
+   => A C compiler converts C source code into machine code.
+
+4. Name some C compilers.
+   => GCC, Clang, and Turbo C are common C compilers.
+
+5. What is GCC?
+   => GCC stands for GNU Compiler Collection.
+
+6. Which command is used to compile a C program?
+   => `gcc filename.c -o output`
+
+7. Which command is used to run the program?
+   => `./output`
+
+8. What is source code?
+   => Source code is the human-readable program written by programmers.
+
+9. What is executable code?
+   => Executable code is machine-readable code generated after compilation.
+
+10. What is Ubuntu?
+    => Ubuntu is a Linux-based operating system.
+
+---
+
+# 2. AWS Skill Builder and AWS Management Console
+
+1. What is AWS?
+   => Amazon Web Services is a cloud computing platform providing online services.
+
+2. What is cloud computing?
+   => Cloud computing means delivering computing services over the internet.
+
+3. What is AWS Skill Builder?
+   => [AWS Skill Builder](https://explore.skillbuilder.aws?utm_source=chatgpt.com) is an online AWS learning platform.
+
+4. What is AWS Management Console?
+   => It is a web interface used to manage AWS services.
+
+5. What are cloud service models?
+   => IaaS, PaaS, and SaaS are cloud service models.
+
+6. What is scalability?
+   => Scalability means increasing or decreasing resources as needed.
+
+7. What is elasticity?
+   => Elasticity is automatic resource adjustment based on demand.
+
+8. What is AWS Free Tier?
+   => AWS Free Tier provides limited free access to AWS services.
+
+9. What is a region in AWS?
+   => A region is a geographical location containing AWS data centers.
+
+10. What is an Availability Zone?
+    => An Availability Zone is an isolated data center within a region.
+
+---
+
+# 3. IAM – Identity and Access Management
+
+1. What is IAM?
+   => AWS Identity and Access Management manages users and permissions in AWS.
+
+2. What is an IAM user?
+   => An IAM user is an individual account created in AWS.
+
+3. What is an IAM group?
+   => An IAM group is a collection of IAM users.
+
+4. What is an IAM policy?
+   => An IAM policy is a JSON document defining permissions.
+
+5. What is authentication?
+   => Authentication verifies user identity.
+
+6. What is authorization?
+   => Authorization grants permissions to access resources.
+
+7. What is MFA?
+   => MFA adds extra security using multiple verification methods.
+
+8. What is the root user?
+   => Root user is the main AWS account owner.
+
+9. What is least privilege?
+   => Giving only minimum required permissions is called least privilege.
+
+10. What is JSON?
+    => JSON stands for JavaScript Object Notation.
+
+---
+
+# 4. Amazon S3 Bucket Operations
+
+1. What is Amazon S3?
+   => Amazon S3 is an object storage service.
+
+2. What is a bucket in S3?
+   => A bucket is a container used to store objects.
+
+3. What is an object in S3?
+   => An object is a file stored inside a bucket.
+
+4. What is object storage?
+   => Object storage stores files as objects with metadata.
+
+5. What is bucket versioning?
+   => Bucket versioning stores multiple versions of objects.
+
+6. What is lifecycle management?
+   => Lifecycle management automates storage transitions and deletions.
+
+7. What is S3 Glacier?
+   => Glacier is low-cost archival storage.
+
+8. Can S3 host websites?
+   => Yes, S3 supports static website hosting.
+
+9. What is bucket policy?
+   => Bucket policy controls access permissions to buckets.
+
+10. What is durability in S3?
+    => Durability means reliable long-term data storage.
+
+---
+
+# 5. VPC and Internet Gateway
+
+1. What is VPC?
+   => Amazon Virtual Private Cloud provides isolated virtual networks in AWS.
+
+2. What is a subnet?
+   => A subnet is a smaller network inside a VPC.
+
+3. What is an Internet Gateway?
+   => It connects the VPC to the internet.
+
+4. What is a route table?
+   => A route table contains rules for directing network traffic.
+
+5. What is CIDR notation?
+   => CIDR notation defines IP address ranges.
+
+6. What is a public subnet?
+   => A public subnet has internet access.
+
+7. What is a private subnet?
+   => A private subnet has no direct internet access.
+
+8. What is NAT Gateway?
+   => NAT Gateway allows private subnet internet access.
+
+9. What is a security group?
+   => A security group acts as a virtual firewall.
+
+10. What is NACL?
+    => NACL stands for Network Access Control List.
+
+---
+
+# 6. EC2 Instances in Public and Private Subnets
+
+1. What is EC2?
+   => Amazon Elastic Compute Cloud provides virtual servers in AWS.
+
+2. What is an instance?
+   => An instance is a virtual machine in AWS.
+
+3. What is AMI?
+   => AMI stands for Amazon Machine Image.
+
+4. What is a key pair?
+   => A key pair is used for secure EC2 login.
+
+5. What is SSH?
+   => SSH is Secure Shell used for remote access.
+
+6. What is a public IP?
+   => A public IP is accessible from the internet.
+
+7. What is a private IP?
+   => A private IP is used inside internal networks.
+
+8. Why use a private subnet for databases?
+   => For improved security and restricted access.
+
+9. What is a web server?
+   => A web server hosts websites and web applications.
+
+10. What ports are used for HTTP and HTTPS?
+    => HTTP uses port 80 and HTTPS uses port 443.
+
+---
+
+# 7. Application Load Balancer
+
+1. What is a Load Balancer?
+   => A Load Balancer distributes traffic across servers.
+
+2. What is ALB?
+   => Application Load Balancer distributes HTTP and HTTPS traffic.
+
+3. Why is load balancing used?
+   => To improve performance and availability.
+
+4. What is a target group?
+   => A target group contains servers receiving traffic.
+
+5. What is a health check?
+   => Health check monitors server condition.
+
+6. Which OSI layer does ALB work on?
+   => ALB works on Layer 7.
+
+7. What is a listener?
+   => A listener checks incoming requests.
+
+8. What is sticky session?
+   => Sticky session sends the same user to the same server.
+
+9. What is DNS?
+   => DNS stands for Domain Name System.
+
+10. What is high availability?
+    => High availability ensures continuous service operation.
+
+---
+
+# 8. AWS Auto Scaling
+
+1. What is Auto Scaling?
+   => Auto Scaling automatically adjusts resources based on demand.
+
+2. Why is Auto Scaling important?
+   => It improves performance and reduces cost.
+
+3. What is scaling out?
+   => Scaling out means adding more instances.
+
+4. What is scaling in?
+   => Scaling in means removing extra instances.
+
+5. What is minimum capacity?
+   => Minimum capacity is the lowest number of instances allowed.
+
+6. What is maximum capacity?
+   => Maximum capacity is the highest number of instances allowed.
+
+7. What is desired capacity?
+   => Desired capacity is the preferred number of running instances.
+
+8. What triggers Auto Scaling?
+   => CPU usage and alarms can trigger Auto Scaling.
+
+9. What is CloudWatch?
+   => Amazon CloudWatch monitors AWS resources.
+
+10. What are scaling policies?
+    => Scaling policies define scaling rules.
+
+---
+
+# 9. AWS RDS Configuration
+
+1. What is RDS?
+   => Amazon Relational Database Service is a managed database service.
+
+2. What is a database?
+   => A database is an organized collection of data.
+
+3. What is a DB instance?
+   => A DB instance is a database environment in RDS.
+
+4. What databases are supported in RDS?
+   => MySQL, PostgreSQL, Oracle, and SQL Server.
+
+5. What is Multi-AZ deployment?
+   => It replicates databases across multiple Availability Zones.
+
+6. What is a snapshot?
+   => A snapshot is a backup copy of a database.
+
+7. What is failover?
+   => Failover switches to backup systems during failure.
+
+8. What is SQL?
+   => SQL stands for Structured Query Language.
+
+9. What is a read replica?
+   => A read replica is a read-only database copy.
+
+10. What are benefits of RDS?
+    => Automation, backup, scalability, and security.
+
+---
+
+# 10. Amazon Macie
+
+1. What is Amazon Macie?
+   => Amazon Macie identifies sensitive data in AWS.
+
+2. Which AWS service does Macie monitor mainly?
+   => Macie mainly monitors Amazon S3.
+
+3. What is sensitive data?
+   => Sensitive data is confidential or personal information.
+
+4. What is data classification?
+   => Data classification organizes data based on sensitivity.
+
+5. What is machine learning in Macie?
+   => It automatically detects sensitive data patterns.
+
+6. What is cloud security?
+   => Cloud security protects cloud systems and data.
+
+7. What is a security finding?
+   => A security finding is an alert about security risks.
+
+8. What is compliance?
+   => Compliance means following security standards and rules.
+
+9. What is encryption?
+   => Encryption converts data into secure unreadable form.
+
+10. What are benefits of Macie?
+    => Automated data discovery and improved security.
+
+
+# Basic Cloud Computing Viva Questions
+
+1. What is cloud computing?
+   => Cloud computing is the delivery of computing services over the internet.
+
+2. What are the types of cloud computing?
+   => Public cloud, private cloud, and hybrid cloud.
+
+3. What is a public cloud?
+   => A public cloud is shared by multiple users over the internet.
+
+4. What is a private cloud?
+   => A private cloud is dedicated to a single organization.
+
+5. What is a hybrid cloud?
+   => A hybrid cloud combines public and private clouds.
+
+6. What are cloud service models?
+   => IaaS, PaaS, and SaaS.
+
+7. What is IaaS?
+   => Infrastructure as a Service provides virtual infrastructure resources.
+
+8. What is PaaS?
+   => Platform as a Service provides a platform for application development.
+
+9. What is SaaS?
+   => Software as a Service provides software through the internet.
+
+10. What are advantages of cloud computing?
+    => Scalability, flexibility, low cost, and easy access.
+
+11. What are disadvantages of cloud computing?
+    => Internet dependency and security concerns.
+
+12. What is virtualization?
+    => Virtualization creates virtual versions of systems and resources.
+
+13. What is a hypervisor?
+    => A hypervisor manages virtual machines.
+
+14. What is scalability?
+    => Scalability means increasing or decreasing resources as needed.
+
+15. What is elasticity?
+    => Elasticity automatically adjusts resources according to demand.
+
+16. What is on-demand service?
+    => Resources are provided whenever users request them.
+
+17. What is resource pooling?
+    => Multiple users share computing resources.
+
+18. What is measured service?
+    => Users pay only for the resources they use.
+
+19. What is broad network access?
+    => Cloud services are accessible over the internet.
+
+20. What is fault tolerance?
+    => A system continues working even during failures.
+
+21. What is high availability?
+    => Services remain continuously accessible with minimal downtime.
+
+22. What is disaster recovery?
+    => Restoring systems and data after failures.
+
+23. What is data backup?
+    => Creating copies of data for recovery purposes.
+
+24. What is data center?
+    => A facility containing servers and networking equipment.
+
+25. What is latency?
+    => Latency is the delay in data transfer.
+
+26. What is bandwidth?
+    => Bandwidth is the amount of data transferred per second.
+
+27. What is multi-tenancy?
+    => Multiple users share the same cloud infrastructure.
+
+28. What is serverless computing?
+    => Running applications without managing servers.
+
+29. What is edge computing?
+    => Processing data near the source instead of distant servers.
+
+30. What is CDN?
+    => CDN stands for Content Delivery Network.
+
+31. What is load balancing?
+    => Load balancing distributes traffic among servers.
+
+32. What is auto scaling?
+    => Auto scaling automatically adjusts resources.
+
+33. What is monitoring in cloud computing?
+    => Monitoring tracks performance and resource usage.
+
+34. What is cloud security?
+    => Cloud security protects cloud resources and data.
+
+35. What is encryption?
+    => Encryption converts data into secure unreadable form.
+
+36. What is authentication?
+    => Authentication verifies user identity.
+
+37. What is authorization?
+    => Authorization gives access permissions.
+
+38. What is MFA?
+    => MFA stands for Multi-Factor Authentication.
+
+39. What is an IP address?
+    => An IP address identifies a device on a network.
+
+40. What is DNS?
+    => DNS converts domain names into IP addresses.
+
+41. What is a virtual machine?
+    => A virtual machine is a software-based computer system.
+
+42. What is containerization?
+    => Containerization packages applications with dependencies.
+
+43. What is Docker?
+    => Docker is a containerization platform.
+
+44. What is Kubernetes?
+    => Kubernetes manages containerized applications.
+
+45. What is AWS?
+    => Amazon Web Services provides cloud computing services.
+
+46. What is Microsoft Azure?
+    => Microsoft Azure is a cloud platform by Microsoft.
+
+47. What is Google Cloud Platform?
+    => Google Cloud Platform provides cloud services by Google.
+
+48. What is a region in cloud computing?
+    => A region is a geographical area containing data centers.
+
+49. What is an Availability Zone?
+    => An Availability Zone is an isolated data center within a region.
+
+50. What is pay-as-you-go pricing?
+    => Users pay only for the cloud resources they consume.

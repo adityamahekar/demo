@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Student Portal</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f1f5f9;
+        }
+
+        header {
+            background: #1e40af;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 220px;
+            background: #1e293b;
+            color: white;
+            padding: 20px;
+        }
+
+        .sidebar div {
+            margin: 15px 0;
+            cursor: pointer;
+        }
+
+        .content {
+            flex: 1;
+            padding: 30px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        table {
+            width: 100%;
+            background: white;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        input, button {
+            padding: 8px;
+            margin: 5px 0;
+        }
+
+        button {
+            background: #2563eb;
+            color: white;
+            border: none;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h2>Student Portal</h2>
+
+        <button onclick="logout()">Logout</button>
+
+    </header>
+
+
+    <div class="container">
+
+        <div class="sidebar">
+
+            <div onclick="show('dashboard')">
+                Dashboard
+            </div>
+
+            <div onclick="show('add')">
+                Add Student
+            </div>
+
+            <div onclick="show('manage')">
+                Manage Students
+            </div>
+
+        </div>
+
+
+        <div class="content">
+
+            <!-- Dashboard -->
+
+            <div id="dashboard">
+
+                <h3>Welcome Student 👋</h3>
+
+                <p>
+                    Total Students:
+                    <span id="count">0</span>
+                </p>
+
+            </div>
+
+
+            <!-- Add Student -->
+
+            <div id="add" class="hidden">
+
+                <h3>Add Student</h3>
+
+                <input id="name" placeholder="Name"><br>
+
+                <input id="roll" placeholder="Roll No"><br>
+
+                <input id="dept" placeholder="Department"><br>
+
+                <button onclick="addStudent()">
+                    Add
+                </button>
+
+            </div>
+
+
+            <!-- Manage Students -->
+
+            <div id="manage" class="hidden">
+
+                <h3>Manage Students</h3>
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Name</th>
+                            <th>Roll</th>
+                            <th>Dept</th>
+                            <th>Action</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="studentTable"></tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        let students =
+        JSON.parse(localStorage.getItem("students")) || [];
+
+
+
+        function show(section) {
+
+            document
+            .querySelectorAll('.content > div')
+            .forEach(div =>
+                div.classList.add('hidden')
+            );
+
+            document
+            .getElementById(section)
+            .classList
+            .remove('hidden');
+
+            loadTable();
+        }
+
+
+
+        function addStudent() {
+
+            students.push({
+
+                name: name.value,
+                roll: roll.value,
+                dept: dept.value
+
+            });
+
+            localStorage.setItem(
+                "students",
+                JSON.stringify(students)
+            );
+
+            alert("Student Added");
+
+            show('manage');
+        }
+
+
+
+        function loadTable() {
+
+            document.getElementById("count").innerText =
+            students.length;
+
+            let table =
+            document.getElementById("studentTable");
+
+            table.innerHTML = "";
+
+            students.forEach((s, i) => {
+
+                table.innerHTML += `
+
+                    <tr>
+
+                        <td>${s.name}</td>
+
+                        <td>${s.roll}</td>
+
+                        <td>${s.dept}</td>
+
+                        <td>
+                            <button onclick="removeStudent(${i})">
+                                Delete
+                            </button>
+                        </td>
+
+                    </tr>
+
+                `;
+            });
+
+        }
+
+
+
+        function removeStudent(i) {
+
+            students.splice(i, 1);
+
+            localStorage.setItem(
+                "students",
+                JSON.stringify(students)
+            );
+
+            loadTable();
+        }
+
+
+
+        function logout() {
+
+            location.href = "index.html";
+
+        }
+
+
+
+        loadTable();
+
+    </script>
+
+</body>
+
+</html>

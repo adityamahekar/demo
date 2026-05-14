@@ -1,0 +1,35 @@
+OE PROGRAM 10
+
+Amazon Macie Cloud Security Service
+
+Aim
+To detect sensitive data using Amazon Macie.
+
+Step 1 Open Macie
+
+1. Search Macie.
+2. Open Amazon Macie.
+
+Step 2 Enable Macie
+
+1. Click Get Started.
+2. Enable Macie.
+
+Step 3 Select S3 Buckets
+
+1. Open S3 bucket inventory.
+2. Select required bucket.
+
+Step 4 Run Sensitive Data Discovery
+
+1. Create classification job.
+2. Start scan.
+3. Wait for analysis.
+
+Step 5 View Findings
+
+1. Open Findings section.
+2. Observe alerts and reports.
+
+Result
+Amazon Macie security scan completed successfully.

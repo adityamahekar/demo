@@ -1,0 +1,36 @@
+OE PROGRAM 7
+
+Application Load Balancer
+
+Aim
+To configure Application Load Balancer.
+
+Step 1 Open EC2
+
+1. Open EC2 Dashboard.
+2. Open Load Balancers from left panel.
+
+Step 2 Create Load Balancer
+
+1. Click Create Load Balancer.
+2. Select Application Load Balancer.
+3. Enter name.
+4. Select VPC.
+5. Select public subnets.
+
+Step 3 Create Target Group
+
+1. Click Create Target Group.
+2. Select EC2 instances.
+3. Register instances.
+
+Step 4 Finish Setup
+
+1. Attach target group.
+2. Create load balancer.
+3. Copy DNS URL.
+4. Test in browser.
+
+Result
+Application Load Balancer configured successfully.
+

@@ -1,0 +1,77 @@
+PROGRAM 1
+
+Install C Compiler in Virtual Machine Using VirtualBox and Execute Simple Programs
+
+Requirements
+Oracle VirtualBox
+Ubuntu OVA File
+GCC Compiler
+
+Step 1 Open VirtualBox
+
+1. Open VirtualBox application.
+2. Wait for VirtualBox Manager window.
+
+Step 2 Import Ubuntu OVA File
+
+1. Click File.
+2. Click Import Appliance.
+3. Browse and select ubuntu_gt6.ova.
+4. Click Next.
+5. Click Import.
+6. Wait until import completes.
+
+Step 3 Configure USB Settings
+
+1. Select imported Ubuntu VM.
+2. Click Settings.
+3. Open USB.
+4. Select USB 1.1.
+5. Click OK.
+
+Step 4 Start Ubuntu VM
+
+1. Select VM.
+2. Click Start.
+3. Wait for Ubuntu login screen.
+
+Step 5 Login
+Username dinesh
+Password 99425
+
+Step 6 Open Terminal
+
+1. Open Ubuntu search.
+2. Search Terminal.
+3. Open Terminal.
+
+Step 7 Navigate Directory
+Type
+cd /opt/axis2/axis2-1.7.3/bin
+
+Step 8 Create C Program
+Type
+gedit hello.c
+
+Enter program
+#include<stdio.h>
+int main()
+{
+printf("Hello World");
+return 0;
+}
+
+Save file.
+
+Step 9 Compile Program
+Type
+gcc hello.c
+
+Step 10 Execute Program
+Type
+./a.out
+
+Result
+Thus simple C program executed successfully.
+
+Page 8

@@ -1,0 +1,50 @@
+PROGRAM 3
+
+AWS IAM User and Permission Management
+
+Aim
+To manage users groups and permissions using IAM.
+
+Step 1 Open IAM
+
+1. Open AWS Console.
+2. Search IAM.
+3. Open IAM service.
+
+Step 2 Open Users
+
+1. Click Users from left panel.
+2. Observe users user 1 user 2 and user 3.
+
+Step 3 Open User Groups
+
+1. Click User Groups.
+2. Observe groups EC2 Admin EC2 Support and S3 Support.
+
+Step 4 Add Users To Groups
+Add user 1 to S3 Support
+
+1. Open S3 Support.
+2. Open Users tab.
+3. Click Add users.
+4. Select user 1.
+5. Click Add users.
+
+Add user 2 to EC2 Support
+Repeat same steps.
+
+Add user 3 to EC2 Admin
+Repeat same steps.
+
+Step 5 Test Users
+
+1. Open Dashboard.
+2. Copy IAM Sign In URL.
+3. Open Incognito window.
+4. Login with user 1 and verify S3 access.
+5. Login with user 2 and verify EC2 Read Only access.
+6. Login with user 3 and verify EC2 admin access.
+
+Result
+IAM users and permissions configured successfully.
+
